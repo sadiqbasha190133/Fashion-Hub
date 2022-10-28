@@ -1,0 +1,18 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img {
+    height: 40%;
+    width: 40%;
+}
+
+.home-heading {
+    color: rgb(34, 192, 255);
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}

@@ -1,0 +1,49 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logo-style {
+    width: 200px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  
+  .nav-items-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .ul-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .nav-item {
+    color: #1e293b;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  
+  .btn-style {
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: 'Roboto';
+    border-radius: 5px;
+    border-width: 0;
+    width: 100px;
+    height: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+  }

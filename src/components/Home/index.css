@@ -1,0 +1,41 @@
+.text-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .text-container {
+    margin-left: 50px;
+    width: 50%;
+  }
+  
+  .text-heading {
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 50px;
+  }
+  
+  .text-paragraph {
+    color: #475569;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .btn-shop-now-style {
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: 'Roboto';
+    border-radius: 5px;
+    border-width: 0;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .home-img {
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-top: 30px;
+  }
