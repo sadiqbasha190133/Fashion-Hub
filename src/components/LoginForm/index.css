@@ -2,24 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-image: url('https://i.postimg.cc/L5GPjmKN/clarke-sanders-Jp-COGj0u-Il-I-unsplash.jpg');
     background-size: cover;
 }
-
-.login-container {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-  }
-  
-  .login-img {
-    margin-left: 40px;
-    margin-top: 80px;
-    width: 50%;
-  }
   
   .login-website-logo {
     width: 150px;
@@ -29,12 +16,12 @@
   
   .login-form-container {
     padding: 50px;
-    width: 30%;
-    height: 37%;
+    width: 65%;
+    height: 75%;
     margin-right: 80px;
-    border-radius: 10%;
+    border-radius: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.425);
   }
   
   .input-container {

@@ -1,3 +1,9 @@
+.bg-container {
+  background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 248));;
+  width: 100%;
+  background-size: cover;
+}
+
 .text-img-container {
     display: flex;
     flex-direction: row;
@@ -10,13 +16,13 @@
   }
   
   .text-heading {
-    color: #000000;
+    color: #410000;
     font-family: 'Roboto';
     font-size: 50px;
   }
   
   .text-paragraph {
-    color: #475569;
+    color: #000000;
     font-size: 30px;
     font-weight: 500;
   }
@@ -34,8 +40,10 @@
     cursor: pointer;
   }
   
-  .home-img {
-    border-radius: 10px;
+  .img {
     margin-right: 50px;
+    margin-bottom: 10px;
     margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
   }

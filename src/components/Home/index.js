@@ -1,12 +1,16 @@
 import './index.css'
 import { Component } from 'react'
 import Header from '../Header'
+import { Navigate } from 'react-router-dom'
+import Cookies from 'js-cookie'
 
+const cookieExit = Cookies.get('jwt_token') === undefined ? false : true
 
 class Home extends Component {
-    render() {
-        return(
-            <div>
+
+    getHome = () => {
+        return (
+            <div className='bg-container'>
                 <>
                 <Header />
                 <div className="text-img-container">
@@ -17,11 +21,17 @@ class Home extends Component {
                     </p>
                     <button type="button" className="btn-shop-now-style">Shop Now</button>
                 </div>
-                <img src="https://i.postimg.cc/sxQGVXDG/calvin-lupiya-Mx4auh5z-O4w-unsplash.jpg" className="home-img" alt="clothes"/>
+                <img src="https://i.postimg.cc/yd9mL574/oladimeji-odunsi-AHBv-AIVqk64-unsplash.jpg" className="img" alt="clothes"/>
                 </div>
                 </>
             </div>
         )
+    }
+
+    render() {
+       
+        return cookieExit ? this.getHome() : <Navigate to='/login'/>
+            
     }
 }
 export default Home

@@ -1,8 +1,15 @@
 import './index.css'
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
+import Cookies from 'js-cookie'
 
 class Header extends Component {
+
+  onLogout = () => {
+    Cookies.remove('jwt_token')
+    window.location.replace('/login')
+  }
+
   render() {
     return (
       <nav className="nav-container">
@@ -13,7 +20,7 @@ class Header extends Component {
             <Link to="/products"><li className="nav-item">Products</li></Link>
             <Link to="/cart"><li className="nav-item">Cart</li></Link>
           </ul>
-          <button type="button" className="btn-style">Logout</button>
+          <button type="button" className="btn-style" onClick={this.onLogout}>Logout</button>
         </div>
       </nav>
     )
