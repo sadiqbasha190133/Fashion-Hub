@@ -16,7 +16,7 @@
   }
   
   .text-heading {
-    color: #410000;
+    color: #7f0000;
     font-family: 'Roboto';
     font-size: 50px;
   }
@@ -44,6 +44,6 @@
     margin-right: 50px;
     margin-bottom: 10px;
     margin-top: 30px;
-    border-radius: 10px;
+    border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
   }

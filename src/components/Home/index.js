@@ -21,7 +21,7 @@ class Home extends Component {
                     </p>
                     <button type="button" className="btn-shop-now-style">Shop Now</button>
                 </div>
-                <img src="https://i.postimg.cc/yd9mL574/oladimeji-odunsi-AHBv-AIVqk64-unsplash.jpg" className="img" alt="clothes"/>
+                <img src="https://i.postimg.cc/13vt6ZWN/Daga-Ziober-Editorial06.jpg" className="img" alt="clothes"/>
                 </div>
                 </>
             </div>

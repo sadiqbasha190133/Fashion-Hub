@@ -22,9 +22,7 @@ class PrimeDealsSection extends Component {
   }
 
   getPrimeDeals = async () => {
-    this.setState({
-      apiStatus: apiStatusConstants.inProgress,
-    })
+    this.setState({apiStatus: apiStatusConstants.inProgress})
 
     const jwtToken = Cookies.get('jwt_token')
 
@@ -52,13 +50,11 @@ class PrimeDealsSection extends Component {
       })
     }
     if (response.status === 401) {
-      this.setState({
-        apiStatus: apiStatusConstants.failure,
-      })
+      this.setState({apiStatus: apiStatusConstants.failure})
     }
   }
 
-  renderPrimeDealsList = () => {
+  renderPrimeDealsListView = () => {
     const {primeDeals} = this.state
     return (
       <div>
@@ -73,16 +69,13 @@ class PrimeDealsSection extends Component {
   }
 
   renderPrimeDealsFailureView = () => (
-    <img
-      src="https://i.postimg.cc/TPRtSTpj/special-sale-gd9a1171ba-1280.png"
-      alt="Register Prime"
-      className="register-prime-image"
-    />
+    <img src="https://i.postimg.cc/XvcwRMhQ/black-friday-social-media-post-g025d51a82-1280.png" 
+    alt="Register Prime" className="register-prime-image"/>
   )
 
   renderLoadingView = () => (
-    <div className="products-loader-container">
-      <Circles type="ThreeDots" color="#0b69ff" height="50" width="50" />
+    <div className="primedeals-loader-container">
+      <Circles type="ThreeDots" color="blue" height="50" width="50" />
     </div>
   )
 
@@ -90,7 +83,7 @@ class PrimeDealsSection extends Component {
     const {apiStatus} = this.state
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderPrimeDealsList()
+        return this.renderPrimeDealsListView()
       case apiStatusConstants.failure:
         return this.renderPrimeDealsFailureView()
       case apiStatusConstants.inProgress:
