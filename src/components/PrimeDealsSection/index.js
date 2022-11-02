@@ -69,13 +69,13 @@ class PrimeDealsSection extends Component {
   }
 
   renderPrimeDealsFailureView = () => (
-    <img src="https://i.postimg.cc/XvcwRMhQ/black-friday-social-media-post-g025d51a82-1280.png" 
+    <img src="https://i.postimg.cc/HxZdfPqY/saqib-rao-layer-0.jpg" 
     alt="Register Prime" className="register-prime-image"/>
   )
 
   renderLoadingView = () => (
     <div className="primedeals-loader-container">
-      <Circles type="ThreeDots" color="blue" height="50" width="50" />
+      <Circles type="ThreeDots" color="black" height="50" width="50" />
     </div>
   )
 
