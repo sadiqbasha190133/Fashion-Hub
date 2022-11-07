@@ -6,6 +6,7 @@ import Cart from './components/Cart'
 import LoginForm from './components/LoginForm'
 import Products from './components/Products';
 import NotFound from './components/NotFound'
+import ProductItem from './components/ProductItem';
 
 const App = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const App = () => (
       <Route exact path="/login" element={<LoginForm/>} />
       <Route exact path="/cart" element={<Cart/>} />
       <Route exact path="/products" element={<Products/>} />
+      <Route exact path="/products/:id" element={<ProductItem/>} />
       <Route path='*' element={<NotFound/>} />
     </Routes>
   </BrowserRouter>
