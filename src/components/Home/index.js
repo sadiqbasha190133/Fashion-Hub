@@ -18,16 +18,6 @@ class Home extends Component {
             <div className='bg-container'>
                 <>
                 <Header />
-                {/* <div className="text-img-container">
-                <div className="text-container">
-                    <h1 className="text-heading">F A S H I O N</h1>
-                    <p className="text-paragraph">Fashion is part of the daily air and it does not quite help thatit changes all the time. Clothes have always been a marker of the era and we are in a revolution. Your fashion makes you been seen
-                    and heard that way you are. So, celebrate the seasons new and exciting fashion in your own way.
-                    </p>
-                    <button type="button" className="btn-shop-now-style" onClick={this.onNavigateToProducts}>Shop Now</button>
-                </div>
-                <img src="https://i.postimg.cc/13vt6ZWN/Daga-Ziober-Editorial06.jpg" className="img" alt="clothes"/>
-                </div> */}
                 <ReactSlick />
                 </>
             </div>
