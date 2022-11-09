@@ -4,10 +4,7 @@ import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import {BsPlusSquare, BsDashSquare} from 'react-icons/bs'
 import CartContext from '../../context/CartContext'
-
 import Header from '../Header'
-import SimilarProductItem from '../SimilarProductItem'
-
 import './index.css'
 
 const apiStatusConstants = {
@@ -20,7 +17,6 @@ const apiStatusConstants = {
 class ProductItemDetails extends Component {
   state = {
     productData: {},
-    similarProductsData: [],
     apiStatus: apiStatusConstants.initial,
     quantity: 1,
   }
@@ -61,12 +57,8 @@ class ProductItemDetails extends Component {
     if (response.ok) {
       const fetchedData = await response.json()
       const updatedData = this.getFormattedData(fetchedData)
-      const updatedSimilarProductsData = fetchedData.similar_products.map(
-        eachSimilarProduct => this.getFormattedData(eachSimilarProduct),
-      )
       this.setState({
         productData: updatedData,
-        similarProductsData: updatedSimilarProductsData,
         apiStatus: apiStatusConstants.success,
       })
     }
@@ -99,21 +91,10 @@ class ProductItemDetails extends Component {
     </div>
   )
 
-  onDecrementQuantity = () => {
-    const {quantity} = this.state
-    if (quantity > 1) {
-      this.setState(prevState => ({quantity: prevState.quantity - 1}))
-    }
-  }
-
-  onIncrementQuantity = () => {
-    this.setState(prevState => ({quantity: prevState.quantity + 1}))
-  }
-
   renderProductDetailsView = () => (
     <CartContext.Consumer>
       {value => {
-        const {productData, quantity, similarProductsData} = this.state
+        const {productData, quantity,} = this.state
         const {
           availability,
           brand,
@@ -163,7 +144,6 @@ class ProductItemDetails extends Component {
                   <button
                     type="button"
                     className="quantity-controller-button"
-                    onClick={this.onDecrementQuantity}
                     testid="minus"
                   >
                     <BsDashSquare className="quantity-controller-icon" />
@@ -172,7 +152,6 @@ class ProductItemDetails extends Component {
                   <button
                     type="button"
                     className="quantity-controller-button"
-                    onClick={this.onIncrementQuantity}
                     testid="plus"
                   >
                     <BsPlusSquare className="quantity-controller-icon" />
@@ -187,15 +166,6 @@ class ProductItemDetails extends Component {
                 </button>
               </div>
             </div>
-            <h1 className="similar-products-heading">Similar Products</h1>
-            <ul className="similar-products-list">
-              {similarProductsData.map(eachSimilarProduct => (
-                <SimilarProductItem
-                  productDetails={eachSimilarProduct}
-                  key={eachSimilarProduct.id}
-                />
-              ))}
-            </ul>
           </div>
         )
       }}
