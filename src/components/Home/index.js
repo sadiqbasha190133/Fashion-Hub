@@ -9,10 +9,6 @@ const cookieExit = Cookies.get('jwt_token') === undefined ? false : true
 
 class Home extends Component {
 
-    onNavigateToProducts = () => {
-        window.location.replace('/products')
-    }
-
     getHome = () => {
         return (
             <div className='bg-container'>

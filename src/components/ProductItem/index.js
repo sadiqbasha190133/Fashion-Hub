@@ -72,6 +72,10 @@ class ProductItem extends Component {
         }
       }
     
+      onNavigateToCart = () => {
+        window.location.replace('/Cart')
+      }
+
     render() {
         const{productData} = this.state
         const{availability,brand,description,imageUrl,price,rating,title,totalReviews} = productData
@@ -89,7 +93,7 @@ class ProductItem extends Component {
                     <p className="tab-available">Availability : <span className="tab-span-element">{availability}</span></p>
                     <p className="tab-brand">Brand : <span className="tab-span-element">{brand}</span></p>
                     <hr/>
-                    <button className="tab-button">ADD TO CART</button>
+                    <button className="tab-button" onClick={this.onNavigateToCart}>ADD TO CART</button>
                 </div>
             </div>
         )

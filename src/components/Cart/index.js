@@ -8,6 +8,10 @@ const cookieExit = Cookies.get('jwt_token') === undefined ? false : true
 
 class Cart extends Component {
 
+    onNavigateToHome = () => {
+        window.location.replace('/')
+    }
+
     getCart = () => {
         return(
             <>
@@ -18,6 +22,7 @@ class Cart extends Component {
                 alt="cart"
                 className="cart-img"
             />
+            <button className='back-to-home-button' onClick={this.onNavigateToHome}>Back to Home</button>
             </div>
             </>
         )
