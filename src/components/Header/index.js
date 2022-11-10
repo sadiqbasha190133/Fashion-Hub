@@ -11,7 +11,7 @@ class Header extends Component {
 
   onLogout = () => {
     Cookies.remove('jwt_token')
-    window.location.replace('/login')
+    window.location.assign('/login')
   }
 
   render() {
