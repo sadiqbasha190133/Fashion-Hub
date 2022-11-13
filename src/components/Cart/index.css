@@ -6,8 +6,8 @@
 }
 
 .cart-img {
-    height: 60vh;
-    width: 60vh;
+    height: 30%;
+    width: 30%;
     margin-top: 30px;
 }
 
@@ -21,4 +21,10 @@
     border-radius: 8px;
     font-style: italic;
     cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    .cart-img{
+        height: 90%;
+        width: 90%;
+    }
 }

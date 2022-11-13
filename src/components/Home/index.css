@@ -1,7 +1,22 @@
 .bg-container {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/3w4MNfW3/318820.jpg');
   background-size: cover;
+}
+
+.button-products {
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: 'Roboto';
+  border-radius: 5px;
+  border-width: 0;
+  width: 100px;
+  height: 40px;
+  margin: 24px;
+  cursor: pointer;
 }
 
 .text-img-container {
@@ -51,3 +66,26 @@
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
   }
+
+  .home-align-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 5%;
+  }
+
+  .fashion-heading{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+@media screen and (max-width:600px) {
+  .bg-container{
+    background-image: url('https://i.postimg.cc/GmCX07n4/oladimeji-odunsi-AHBv-AIVqk64-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+  }
+}
