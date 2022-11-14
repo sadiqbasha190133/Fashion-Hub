@@ -14,7 +14,7 @@ class Home extends Component {
                 <Header />
                 <div className='home-align-container'>
                     <div>
-                        <h1 className='fashion-heading'>FASHION SALE <br/> <span style={{color:'green',fontStyle:'italic',}}>Dazzling Deals</span></h1>
+                        <h1 className='fashion-heading'>FASHION SALE <br/> <span style={{color:'green',fontStyle:'italic'}}>Dazzling Deals</span></h1>
                         <Link to='/products'><button className='button-products'>Products</button></Link>
                     </div>
                 </div>

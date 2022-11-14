@@ -4,9 +4,9 @@
 }
 
 .tab-img {
-    height: 70%;
-    width: 80%;
-    margin: 20px;
+    height: 90%;
+    width: 90%;
+    margin: 10px;
     border-radius: 15px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .tab-price {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 19, 192);
     font-size: 25px;
     font-weight: bold;
 }
@@ -56,6 +56,10 @@
     font-weight: bold;
 }
 
+.tab-details-container {
+    margin-left: 10px;
+}
+
 .tab-button {
     background-color: rgb(0, 150, 237);
     color: rgb(255, 255, 255);
@@ -76,7 +80,7 @@
         font-size: 25px;
     }
     .tab-description {
-        font-size: 8px;
+        font-size: 12px;
     }
     .tab-price {
         font-size: 20px;
