@@ -4,8 +4,8 @@
 }
 
 .tab-img {
-    height: 70vh;
-    width: 70vh;
+    height: 70%;
+    width: 80%;
     margin: 20px;
     border-radius: 15px;
 }
@@ -64,4 +64,21 @@
     padding: 10px;
     margin-top: 30px;
     cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    .tab-bg-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tab-heading {
+        font-size: 25px;
+    }
+    .tab-description {
+        font-size: 8px;
+    }
+    .tab-price {
+        font-size: 20px;
+    }
 }
