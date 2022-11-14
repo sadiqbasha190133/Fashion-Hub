@@ -23,7 +23,7 @@ class Header extends Component {
             <Link to="/"><li className="nav-item">Home</li><i className="fa-solid fa-house-heart icons-img"></i></Link>
             <Link to="/products"><li className="nav-item">Products</li></Link>
             <Link to="/cart"><li className="nav-item">Cart</li><i className="fa-solid fa-cart-shopping icons-img"></i></Link>
-            <i class="fa-solid fa-right-from-bracket icons-img" onClick={this.onLogout}></i>
+            <i className="fa-solid fa-right-from-bracket icons-img" onClick={this.onLogout}></i>
           </ul>
           <button type="button" className="btn-style" onClick={this.onLogout}>Logout</button>
         </div>

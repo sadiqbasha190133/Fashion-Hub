@@ -1,7 +1,7 @@
 import { Component } from "react";
 import './index.css'
 import Cookies from "js-cookie";
-
+import Header from "../Header";
 const Url = window.location.href
 
 const apiStatusConstants = {
@@ -80,22 +80,25 @@ class ProductItem extends Component {
         const{productData} = this.state
         const{availability,brand,description,imageUrl,price,rating,title,totalReviews} = productData
         return(
-            <div className="tab-bg-container">
-                <div className="tab-img-container">
-                    <img src={imageUrl} alt={title} className='tab-img'/>
-                </div>
-                <div className="tab-details-container">
-                    <h1 className="tab-heading">{title}</h1>
-                    <p className="tab-price">RS /-{price}</p>
-                    <p className="tab-ratings">{rating}</p>
-                    <p className="tab-total-reviews">{totalReviews} Reviews</p>
-                    <p className="tab-description">{description}</p>
-                    <p className="tab-available">Availability : <span className="tab-span-element">{availability}</span></p>
-                    <p className="tab-brand">Brand : <span className="tab-span-element">{brand}</span></p>
-                    <hr/>
-                    <button className="tab-button" onClick={this.onNavigateToCart}>ADD TO CART</button>
-                </div>
-            </div>
+            <>
+            <Header/>
+              <div className="tab-bg-container">
+                  <div className="tab-img-container">
+                      <img src={imageUrl} alt={title} className='tab-img'/>
+                  </div>
+                  <div className="tab-details-container">
+                      <h1 className="tab-heading">{title}</h1>
+                      <p className="tab-price">RS /-{price}</p>
+                      <p className="tab-ratings">{rating}</p>
+                      <p className="tab-total-reviews">{totalReviews} Reviews</p>
+                      <p className="tab-description">{description}</p>
+                      <p className="tab-available">Availability : <span className="tab-span-element">{availability}</span></p>
+                      <p className="tab-brand">Brand : <span className="tab-span-element">{brand}</span></p>
+                      <hr/>
+                      <button className="tab-button" onClick={this.onNavigateToCart}>ADD TO CART</button>
+                  </div>
+              </div>
+            </>
         )
     }
 }
