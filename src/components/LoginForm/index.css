@@ -79,6 +79,9 @@
     padding: 18px;
   }
   .bg-login-container {
+    background-image: url('https://e0.pxfuel.com/wallpapers/554/812/desktop-wallpaper-men-and-women-fashion-models-outfit.jpg');
+    background-size: cover;
+    background-position: center;
     align-items: center;
   }
 }

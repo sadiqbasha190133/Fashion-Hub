@@ -1,6 +1,7 @@
 .product-sections {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
     width: 95%;
     max-width: 1110px;
