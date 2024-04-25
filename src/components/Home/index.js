@@ -10,15 +10,18 @@ class Home extends Component {
 
     getHome = () => {
         return (
+            <>
+            <Header />
             <div className='bg-container'>
-                <Header />
+                
                 <div className='home-align-container'>
                     <div>
-                        <h1 className='fashion-heading'>FASHION SALE <br/> <span style={{color:'green',fontStyle:'italic'}}>Dazzling Deals</span></h1>
+                        <h1 className='fashion-heading'>FASHION SALE <br/> <span style={{color:'white',fontStyle:'italic'}}>Dazzling Deals</span></h1>
                         <Link to='/products'><button className='button-products'>Products</button></Link>
                     </div>
                 </div>
             </div>
+            </>
         )
     }
 
